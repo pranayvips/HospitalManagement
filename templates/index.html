@@ -58,39 +58,128 @@
 
   <!-- Services -->
   <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>Appointments</h3>
-        <p>Schedule and manage your doctor appointments with ease.</p>
-      </div>
-      <div class="card">
-        <h3>Doctors</h3>
-        <p>Find specialized doctors and view their availability.</p>
-      </div>
-      <div class="card">
-        <h3>Emergency</h3>
-        <p>24/7 emergency support and quick admission services.</p>
-      </div>
-      <div class="card">
-        <h3>Pharmacy</h3>
-        <p>Order and track prescribed medicines online.</p>
-      </div>
+  <h2>Our Services</h2>
+  <p class="services-intro">
+    At <strong>MediCare+</strong>, we provide a wide range of healthcare and hospital management services 
+    to ensure seamless patient care and efficiency.
+  </p>
+
+  <div class="service-grid">
+    <div class="service-card">
+      🩺
+      <h3>Doctor Consultation</h3>
+      <p>Find experienced doctors across specialties and book online consultations instantly.</p>
     </div>
-  </section>
+    <div class="service-card">
+      📅
+      <h3>Appointments</h3>
+      <p>Schedule and manage appointments with ease through our smart booking system.</p>
+    </div>
+    <div class="service-card">
+      🚑
+      <h3>Emergency Care</h3>
+      <p>24/7 ambulance support and emergency treatment at your fingertips.</p>
+    </div>
+    <div class="service-card">
+      💊
+      <h3>Pharmacy</h3>
+      <p>Order prescribed medicines online and track your delivery in real-time.</p>
+    </div>
+    <div class="service-card">
+      🏥
+      <h3>Patient Records</h3>
+      <p>Access your medical history, lab reports, and prescriptions securely anytime.</p>
+    </div>
+    <div class="service-card">
+      🔔
+      <h3>Health Reminders</h3>
+      <p>Get reminders for medicines, follow-ups, and upcoming appointments.</p>
+    </div>
+  </div>
+</section>
 
   <!-- Contact -->
   <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: support@medicare.com</p>
-    <p>Phone: +91 98765 43210</p>
-    <p>Address: 123 Health Street, City Hospital, India</p>
-  </section>
+  <h2>Contact Us</h2>
+  <p class="contact-intro">
+    Have questions or need support? Reach out to <strong>MediCare+</strong>.  
+    We’re here 24/7 to assist patients and doctors.
+  </p>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="info-card">
+        📍 <span>123 Health Street, City Hospital, India</span>
+      </div>
+      <div class="info-card">
+        📞 <span>+91 98765 43210</span>
+      </div>
+      <div class="info-card">
+        📧 <span>support@medicare.com</span>
+      </div>
+      <div class="info-card">
+        ⏰ <span>Open 24/7</span>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- Logo & About -->
+    <div class="footer-section">
+      <h3 class="logo">MediCare+</h3>
+      <p>
+        A modern hospital management system designed to simplify healthcare,
+        connect patients with doctors, and provide 24/7 medical support.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>📍 123 Health Street, City Hospital, India</p>
+      <p>📞 +91 98765 43210</p>
+      <p>📧 support@medicare.com</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">🐦</a>
+        <a href="#">📸</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
     <p>&copy; 2025 MediCare+. All Rights Reserved.</p>
-  </footer>
+  </div>
+</footer>
 
 
     <!-- Linking script.js file present in sources folder -->
