@@ -4,8 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Linking styles.css file present in sources folder -->
+    <link rel="stylesheet" href="../sources/styles.css">
 </head>
 <body>
-    
+  <!-- Navbar -->
+  <nav>
+  <div class="logo">MediCare+</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+    </div>
+    <button class="login-btn">Login</button>
+  </div>
+</nav>
+
+  <!-- Hero -->
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Your Health, Our Top Priority</h1>
+    <p>
+      Welcome to <strong>MediCare+</strong>, a modern hospital management system that connects
+      patients, doctors, and services with just a few clicks. Book appointments, access medical
+      records, and get emergency help instantly.
+    </p>
+    <div class="hero-buttons">
+      <button class="btn-primary">Book Appointment</button>
+      <button class="btn-secondary">Learn More</button>
+    </div>
+
+    <div class="hero-features">
+      <div class="feature">
+        🩺 <span>Find Trusted Doctors</span>
+      </div>
+      <div class="feature">
+        📅 <span>Easy Online Booking</span>
+      </div>
+      <div class="feature">
+        🚑 <span>24/7 Emergency Support</span>
+      </div>
+      <div class="feature">
+        💊 <span>Online Pharmacy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Appointments</h3>
+        <p>Schedule and manage your doctor appointments with ease.</p>
+      </div>
+      <div class="card">
+        <h3>Doctors</h3>
+        <p>Find specialized doctors and view their availability.</p>
+      </div>
+      <div class="card">
+        <h3>Emergency</h3>
+        <p>24/7 emergency support and quick admission services.</p>
+      </div>
+      <div class="card">
+        <h3>Pharmacy</h3>
+        <p>Order and track prescribed medicines online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@medicare.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: 123 Health Street, City Hospital, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MediCare+. All Rights Reserved.</p>
+  </footer>
+
+
+    <!-- Linking script.js file present in sources folder -->
+    <script src="../sources/scripts.js"></script>
 </body>
 </html>
