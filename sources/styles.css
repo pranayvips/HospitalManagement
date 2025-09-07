@@ -15,21 +15,23 @@ a {
   color: inherit;
 }
 
-/* ====== Navbar ====== */
+/* ====== Transparent Navbar ====== */
 header {
-  background: #111;
-  color: #fff;
+  background: transparent;   /* fully transparent */
   padding: 15px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;           /* stays on top */
   top: 0;
+  width: 100%;
   z-index: 1000;
 }
+
 header h1 {
-  color: #f04e30;
+  color: #f04e30;           /* logo color */
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -38,13 +40,14 @@ nav ul li {
   margin: 0 15px;
 }
 nav ul li a {
-  color: #fff;
+  color: #fff;              /* white text for visibility */
   font-weight: bold;
   transition: 0.3s;
 }
 nav ul li a:hover {
-  color: #f04e30;
+  color: #f04e30;           /* red hover */
 }
+
 
 /* ====== Hero Section ====== */
 .hero {
