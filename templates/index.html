@@ -1,188 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Linking styles.css file present in sources folder -->
-    <link rel="stylesheet" href="../sources/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Management System</title>
+  <!-- /==========CSS========== -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- JavaScript -->
+  <script src="scripts.js"></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-  <div class="logo">MediCare+</div>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <div class="search-box">
-      <input type="text" placeholder="Search..." />
-      <button>🔍</button>
-    </div>
-    <button class="login-btn">Login</button>
-  </div>
-</nav>
 
-  <!-- Hero -->
-  <section class="hero">
-  <div class="hero-content">
-    <h1>Your Health, Our Top Priority</h1>
-    <p>
-      Welcome to <strong>MediCare+</strong>, a modern hospital management system that connects
-      patients, doctors, and services with just a few clicks. Book appointments, access medical
-      records, and get emergency help instantly.
-    </p>
-    <div class="hero-buttons">
-      <button class="btn-primary">Book Appointment</button>
-      <button class="btn-secondary">Learn More</button>
-    </div>
+  <!-- ====== Header ====== -->
+  <header>
+    <h1>GYMPro</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="hero-features">
-      <div class="feature">
-        🩺 <span>Find Trusted Doctors</span>
+  <!-- ====== Hero ====== -->
+  <section class="hero" id="hero">
+    <h2>Transform Your Body, Transform Your Life</h2>
+    <p>Join our Gym today and achieve your fitness goals with expert guidance.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Join Now</button>
+  </section>
+
+  <!-- ====== Services ====== -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service"><h3>Personal Training</h3><p>One-on-one coaching tailored to your needs.</p></div>
+      <div class="service"><h3>Group Classes</h3><p>Fun and engaging classes for all fitness levels.</p></div>
+      <div class="service"><h3>Nutrition Guidance</h3><p>Meal plans designed to complement your workouts.</p></div>
+    </div>
+  </section>
+
+  <!-- ====== Plans ====== -->
+  <section id="plans">
+    <h2>Membership Plans</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Basic Plan</h3>
+        <p>$20 / Month</p>
+        <p>Access to gym equipment</p>
+        <button>Choose Plan</button>
       </div>
-      <div class="feature">
-        📅 <span>Easy Online Booking</span>
+      <div class="plan">
+        <h3>Standard Plan</h3>
+        <p>$40 / Month</p>
+        <p>Includes group classes</p>
+        <button>Choose Plan</button>
       </div>
-      <div class="feature">
-        🚑 <span>24/7 Emergency Support</span>
+      <div class="plan">
+        <h3>Premium Plan</h3>
+        <p>$60 / Month</p>
+        <p>Personal trainer & nutrition guide</p>
+        <button>Choose Plan</button>
       </div>
-      <div class="feature">
-        💊 <span>Online Pharmacy</span>
+    </div>
+  </section>
+
+  <!-- ====== Trainers ====== -->
+  <section id="trainers">
+    <h2>Meet Our Trainers</h2>
+    <div class="trainers">
+      <div class="trainer">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Trainer 1">
+        <h4>John Smith</h4>
+        <p>Strength & Conditioning Coach</p>
+      </div>
+      <div class="trainer">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Trainer 2">
+        <h4>Emily Johnson</h4>
+        <p>Yoga & Flexibility Expert</p>
+      </div>
+      <div class="trainer">
+        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Trainer 3">
+        <h4>Michael Brown</h4>
+        <p>Nutrition & Weight Loss Specialist</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Services -->
-  <section id="services" class="services">
-  <h2>Our Services</h2>
-  <p class="services-intro">
-    At <strong>MediCare+</strong>, we provide a wide range of healthcare and hospital management services 
-    to ensure seamless patient care and efficiency.
-  </p>
-
-  <div class="service-grid">
-    <div class="service-card">
-      🩺
-      <h3>Doctor Consultation</h3>
-      <p>Find experienced doctors across specialties and book online consultations instantly.</p>
-    </div>
-    <div class="service-card">
-      📅
-      <h3>Appointments</h3>
-      <p>Schedule and manage appointments with ease through our smart booking system.</p>
-    </div>
-    <div class="service-card">
-      🚑
-      <h3>Emergency Care</h3>
-      <p>24/7 ambulance support and emergency treatment at your fingertips.</p>
-    </div>
-    <div class="service-card">
-      💊
-      <h3>Pharmacy</h3>
-      <p>Order prescribed medicines online and track your delivery in real-time.</p>
-    </div>
-    <div class="service-card">
-      🏥
-      <h3>Patient Records</h3>
-      <p>Access your medical history, lab reports, and prescriptions securely anytime.</p>
-    </div>
-    <div class="service-card">
-      🔔
-      <h3>Health Reminders</h3>
-      <p>Get reminders for medicines, follow-ups, and upcoming appointments.</p>
-    </div>
-  </div>
-</section>
-
-  <!-- Contact -->
+  <!-- ====== Contact ====== -->
   <section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p class="contact-intro">
-    Have questions or need support? Reach out to <strong>MediCare+</strong>.  
-    We’re here 24/7 to assist patients and doctors.
-  </p>
-
-  <div class="contact-container">
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <div class="info-card">
-        📍 <span>123 Health Street, City Hospital, India</span>
-      </div>
-      <div class="info-card">
-        📞 <span>+91 98765 43210</span>
-      </div>
-      <div class="info-card">
-        📧 <span>support@medicare.com</span>
-      </div>
-      <div class="info-card">
-        ⏰ <span>Open 24/7</span>
-      </div>
-    </div>
-
-    <!-- Contact Form -->
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" rows="5" placeholder="Your Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
-  </div>
-</section>
+  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-  <div class="footer-container">
-    <!-- Logo & About -->
-    <div class="footer-section">
-      <h3 class="logo">MediCare+</h3>
-      <p>
-        A modern hospital management system designed to simplify healthcare,
-        connect patients with doctors, and provide 24/7 medical support.
-      </p>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-section">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="footer-section">
-      <h4>Contact</h4>
-      <p>📍 123 Health Street, City Hospital, India</p>
-      <p>📞 +91 98765 43210</p>
-      <p>📧 support@medicare.com</p>
-    </div>
-
-    <!-- Social Links -->
-    <div class="footer-section">
-      <h4>Follow Us</h4>
-      <div class="social-icons">
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">🐦</a>
-        <a href="#">📸</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 MediCare+. All Rights Reserved.</p>
-  </div>
-</footer>
-
-
-    <!-- Linking script.js file present in sources folder -->
-    <script src="../sources/scripts.js"></script>
+  <!-- ====== Footer ====== -->
+  <footer>
+    <p>&copy; 2025 GYMPro | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
